@@ -1,34 +1,132 @@
 <html lang="eng">
     
-    <header>
+    <head>
         <meta charset="UTF-8">
-    </header>
+        
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <body style="margin: 0; background-color: 9CC5A1;">
+        <style>
+            body {
+                margin: 0;
+                font-family: Roboto, serif;
+            }
 
-        <nav style = "display: flex; background-color: 49A078; padding: 1rem;"> <!--Navigation bar-->
-            <div> <!--Aligned to the left-->
-                <a>Logo<img><a>
-                <a href="index.html">Home</a>
-                <a href="progress.html">Progress</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contacts</a>
-                
-            </div>
-            <div> <!--Aligned to right-->
-                <input type="search" name="search" placeholder="Search...">
-                <a href="settings.html">Settings</a>
-                <a href="profile.html">Profile</a>
+            /* Navigation bar */
+
+            .navigation_bar {
+                background-color: #1F2421;
+                padding: 1rem;
+            }
+    
+            .navigation_dividers {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            .navigation_elements {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .navigation_elements li {
+                margin: 0.5rem;
+
+            }
+            
+            .navigation_elements a {
+                text-decoration: none;
+                color: #49A078;
+            }
+    
+            .navigation_elements input[type="search"] {
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            /* introductory */
+            .introduction {
+                height: 800px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .introduction img {
+                object-fit: cover;
+                object-position: center;
+            }
+
+            footer {
+                padding: 0.75rem;
+                color: #49A078;
+                background-color:#1F2421;
+                clear: both;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class = "navigation_bar"> <!--Navigation bar-->
+            <div class = "navigation_dividers">
+                <div> <!--Aligned to the left-->
+                    <ul class = "navigation_elements">
+                        <li><a>LOGO <img></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="progress.html">Progress</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+                <div> <!--Aligned to right-->
+                    <ul class = "navigation_elements">
+                        <li><input type="search" name="search" placeholder="Search..."></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="profile.html">Profile</a></li>                        
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <main> <!--Main Content-->
             
-            
+            <div class="introduction">
+                <div>
+                    <h1>Want to Live Sustainably?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <img src = "../images/river valley.jpg">
+                </div>
+            </div>
+
+            <section> <!--Chapers-->
+                <h3>CHECK OUT OUR GUIDES...</h3>
+                <div class = "navigation">
+                    <div>
+                        <a href="#">Guide</a>
+                    </div>
+                    <div>
+                        <a href="#">Products</a>
+                    </div>
+                        <a href="#">Tools</a>
+                    <div class>
+
+                    </div>  
+                </div>   
+            </section>
 
         </main>
 
-        <footer style = "background-color: 49A078;">
+        <footer>
             <p>© 2025 Life and Leaf, All Rights Reserved.</p>
             <a href = "#"> Privacy Policy </a> | <a href = "#"> Terms of Service </a> | <a href = "contact.html">Contact Us</a>
         </footer>
