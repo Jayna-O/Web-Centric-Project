@@ -1,14 +1,53 @@
 <html lang="eng">
-
+    <style> 
+        table, th, td { 
+           border: 2px solid gray; 
+        } 
+    </style>
     <header>
+        <meta charset="UTF-8">
         <title>Contacts</title>    
     </header>
+    
     <body>
+        <nav> <!--Navigation bar-->
+            <div> <!--Aligned to the left-->
+                <a>Logo<img><a>
+                <a href="index.html">Home</a>
+                <a href="progress.html">Progress</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contacts</a>
+                
+            </div>
+            <div> <!--Aligned to right-->
+                <input type="search" name="search" placeholder="Search...">
+                <a href="settings.html">Settings</a>
+                <a href="profile.html">Profile</a>
+            </div>
+        </nav>
         <main>
-            <h1>Contacts</h1>
+            <h1>Contact Us</h1>
+            <form>
+                <p>
+                    <label for="first">First Name:</label>
+                    <input type="text" name = "first" id="first" placeholder="First Name">
+                </p>
+                <p>
+                    <label for="last">Last Name:</label>
+                    <input type="text" name = "last" id="last" placeholder="Last Name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name = "email" id="email" placeholder="name@domain.com">
+                </p>
+                <p>
+                    <textarea id="message" name="message" rows="4" cols="50">Comment or Message</textarea>
+                </p>
+                <input type="submit">
+            </form>
             <table>  
                 <tr>
-                        
+
                 </tr>
                 <tr>
                     <td>Nina Zhang</td>
@@ -22,8 +61,10 @@
                 </tr>
             </table>
         </main>
+        <footer>
+            <p>© 2025 Life and Leaf, All Rights Reserved.</p>
+            <a href = "#"> Privacy Policy </a> | <a href = "#"> Terms of Service </a> | <a href = "contact.html">Contact Us</a>
+        </footer>
     </body>
-    <footer>
-            
-    </footer>
+    
 </html>
