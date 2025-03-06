@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Roboto, serif;
+}
+table, th, td { 
+   border: 2px solid gray; 
+} 
+.navigation_bar {
+    background-color: #1F2421;
+    padding: 1rem;
+}
+
+.navigation_dividers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation_elements {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation_elements li {
+    margin: 0.5rem;
+}
+    
+.navigation_elements a {
+    text-decoration: none;
+    color: #49A078;
+}
+
+.navigation_elements input[type="search"] {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
