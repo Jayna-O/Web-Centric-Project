@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-VariableFont_wdth\,wght.ttf) format('woff2');
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.title {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    background-color: #1F2421;
+    padding: 70px;
+    margin: 0   
+}
+
+section {
+    text-align: center;
+}
