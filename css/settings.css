@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-VariableFont_wdth\,wght.ttf) format('woff2');
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#about_page footer, #setting footer{
+    padding: 0.75rem;
+    color: #49A078;
+    background-color:#1F2421;
+    clear: both;
+    width: 98%;
+    position: absolute;
+    bottom: -580px;
+}
+
+#about_page h2, #setting h2 {
+    font-size: 35px;
+}
+
+#about_page p{
+    font-size: 20px
+}
+
+#about_page h1, #setting h1{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    background-color: #1F2421;
+    padding: 70px;
+    margin-top: 0px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.content img {
+    flex: 0 0 40%;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#setting input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    border: 1px solid gray;
+    padding: 5px;
+    font-style: italic;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+#setting .help {
+    padding: 10px;
+    width: auto;
+    border-radius: 8px;
+    margin-top: -17px;
+    background-color: white;
+}
+
+#setting form {
+    text-align: center;
+}
+
+#setting img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#setting div{
+    padding: 10px;
+} 
+
+#setting label {
+    font-size: 25px;
+}
+
+#main_title {
+    text-align: center;
+}
+
+#setting p {
+    margin-top: 0px;
+}

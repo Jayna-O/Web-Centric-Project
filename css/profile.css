@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-VariableFont_wdth\,wght.ttf) format('woff2');
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 #profile_page section{
     text-align: center;
 }

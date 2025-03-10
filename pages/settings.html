@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/footer.css">
     </head>
 
-    <body>
+    <body id="setting">
 
         <nav class="navigation_bar"> <!--Navigation bar-->
             <div class = "navigation_dividers">
@@ -33,38 +33,47 @@
                 </div>
             </div>
         </nav>
-
         <h1>
             <!--Name of the page-->
             Settings
         </h1>
 
         <!--Different sections of the website-->
-        <section>
-            <h2>
-                Account and Privacy Settings
-            </h2>
-            <ul>
-                <li><a href = "#">Change Username</a></li>
-                <li><a href = "#">Change Password</a></li>
-                <li><a href = "#">Change Email</a></li>
-                <li><a href = "#">Change Profile Picture</a></li>
-                <li><a href = "#">Change Phone Number</a></li>
-            </ul>
-        </section>
 
-        <section>
-            <h2>
-                Purchases and Subscriptions
-            </h2>
-            <ul>
-                <li><a href = "#" >Recent Purchases</a></li>
-                <li><a href = "#">Subscription Details</a></li>
-                <li><a href = "#">Card Information</a></li>
-            </ul>
-        </section>
 
-        <section>
+        <h2 id="main_title">
+            Account and Privacy Settings
+        </h2>
+
+        <form>
+            <div>
+                <label for="username">Change Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your username..." minlength="4" maxlength="8">
+
+                <label for="pic">Change Profile Picture:</label>
+                <input type="file" id="pic" name="pic" accept="image/*">
+
+                <label for="email">Change Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+            </div>
+          <div>
+                <label for="old_password">Old Password:</label>
+                <input type="password" id="old_password" name="old_password" placeholder="Old password..." minlength="4" maxlength="8">
+
+                <label for="new_password">New Password:</label>
+                <input type="password" id="new_password" name="new_password" placeholder="New password..." minlength="8" maxlength="8">
+
+                <label for="phone">Change Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" minlength="10" maxlength="10">
+            </div>
+
+        </form>
+
+        <div class="help">
+
+            <img src="https://src.n-ix.com/uploads/2024/04/26/7564d508-5871-4b64-a877-8156a3aba9f6.webp" alt="background">
+            <p>Image of <cite>Sustainability</cite> from <cite>n-ix.com</cite></p>
+            
             <h2>
                 Help Center
             </h2>
@@ -72,8 +81,12 @@
                 <li><a href = "#">Common Issues Guide</a></li>
                 <li><a href = "#">Contact Support</a></li>
             </ul>
-        </section>
+        </div>
+
+        <footer>
+            <p>© 2025 Life and Leaf, All Rights Reserved.</p>
+            <a href = "#"> Privacy Policy </a> | <a href = "#"> Terms of Service </a> | <a href = "contact.html">Contact Us</a>
+        </footer>
 
     </body>
-
 </html>
