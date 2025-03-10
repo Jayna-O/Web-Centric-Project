@@ -1,18 +1,14 @@
-body {
-    margin: 0;
-    font-family: Roboto, serif;
-}
-
 a {
     text-decoration: none;
     color: #49A078;
 }
 
-/* Navigation bar */
-
 .navigation_bar {
+    position: sticky;
+    top: 0;
     background-color: #1F2421;
     padding: 1rem;
+    z-index: 3;
 }
 
 .navigation_dividers {
@@ -28,9 +24,13 @@ a {
     margin: 0;
 }
 
+.nav_element a:hover {
+    color: white;
+}
+
 .navigation_elements li {
     margin: 0.5rem;
-
+    text-decoration: none;
 }
 
 .navigation_elements input[type="search"] {
