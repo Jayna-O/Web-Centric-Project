@@ -4,29 +4,13 @@
     
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
-        <style>
-            /* introductory */
-            .introduction {
-                height: 800px;
-                overflow: hidden;
-                position: relative;
-            }
 
-            .introduction img {
-                object-fit: cover;
-                object-position: center;
-            }
-
-            footer {
-                padding: 0.75rem;
-                color: #49A078;
-                background-color:#1F2421;
-                clear: both;
-            }
-        </style>
-
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/footer.css">
     </head>
 
     <body>
@@ -35,53 +19,59 @@
             <div class = "navigation_dividers">
                 <div> <!--Aligned to the left-->
                     <ul class="navigation_elements">
-                        <li><a href="index.html">Life and Leaf</a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="progress.html">Progress</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
+                        <li class="nav_element"><a href="index.html">Life and Leaf</a></li>
+                        <li class="nav_element"><a href="index.html">Home</a></li>
+                        <li class="nav_element"><a href="progress.html">Progress</a></li>
+                        <li class="nav_element"><a href="about.html">About</a></li>
+                        <li class="nav_element"><a href="contact.html">Contacts</a></li>
                     </ul>
                 </div>
                 <div> <!--Aligned to right-->
                     <ul class = "navigation_elements">
-                        <li><input type="search" name="search" placeholder="Search..."></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="profile.html">Profile</a></li>                        
+                        <li class="nav_element"><input type="search" name="search" placeholder="Search..."></li>
+                        <li class="nav_element"><a href="settings.html">Settings</a></li>
+                        <li class="nav_element"><a href="profile.html">Profile</a></li>                        
                     </ul>
                 </div>
             </div>
         </nav>
 
         <main> <!--Main Content-->
-            
-            <div class="introduction">
-                <div>
-                    <h1>Want to Live Sustainably?</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+            <section id="intro">
+                <div class="image_container">
+                    <div class="text_overlay">Life and Leaf</div>
                 </div>
-                <div>
-                    <a href="https://education.nationalgeographic.org/resource/forest-biome/"><img src="../images/river_valley.jpg" alt="forest"></a>
-                </div>
-            </div>
-
-            <section> <!--Chapers-->
-                <h3>CHECK OUT OUR GUIDES...</h3>
-                <div class = "navigation">
-                    <div>
-                        <a href="#">Guide</a>
-                    </div>
-                    <div>
-                        <a href="#">Products</a>
-                    </div>
-                        <a href="#">Tools</a>
-                    <div class>
-
-                    </div>  
-                </div>   
             </section>
 
+            <section id="introduction">
+                <div class="intro_paragraph">
+                    
+                </div>
+                <div class="intro_image">
+
+                </div>
+            </section>
+
+            <section id="guides"> <!--Chapers-->
+                <h3 class="guide_title">NEED HELP IN BEING SUSTAINABLE?</h3>
+                <div class="guides_containers">
+                    <a class="guide1">
+                        <div class="guide_text">
+                            Guide
+                        </div>
+                    </a>
+                    <a class="guide2">
+                        <div class="guide_text">
+                            Products
+                        </div>
+                    </a>
+                    <a class="guide3">
+                        <div class="guide_text">
+                            Tools
+                        </div>
+                    </a>
+                </div>
+            </section>
         </main>
 
         <footer>
