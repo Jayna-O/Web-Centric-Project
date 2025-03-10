@@ -1,0 +1,39 @@
+#contact_page h1{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    background-color: #1F2421;
+    padding: 70px;
+    margin-top: 0px;    
+}
+
+#contact_page form{
+    text-align: center;
+    border: 2px green solid;
+}
+
+#contact_page input[type="email"] {
+    width: 415px;
+}
+
+#contact_page input[type="text"]{
+    width: 200px;
+}
+#contact_page footer{
+    color: #49A078;
+    padding: 0.75rem;
+    background-color:#1F2421;
+    clear: both;
+    position: absolute;
+    left: 0px;
+    bottom: -200px;
+    width: 100%;
+}
+#contact_page #container{
+    display: flex;
+    justify-content: space-around;
+}
+#contact_page .items{
+    padding: 10px 30px;
+    text-align: center;
+}
