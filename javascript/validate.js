@@ -46,6 +46,7 @@ function checkName(){
 }
 function checkForm(event) {
     if (!firstValid || !lastValid || !emailValid) {
+        window.alert("Fill in Missing Information")
         event.preventDefault();
     }
 }
