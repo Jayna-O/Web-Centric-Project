@@ -4,9 +4,11 @@
     <head>
         <title>Contacts</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
         <link rel="stylesheet" href="/css/nav.css">
         <link rel="stylesheet" href="/css/contact.css">
         <link rel="stylesheet" href="/css/footer.css">
+        <script src="/javascript/validate.js" defer></script>
     </head>
     
     <body id="contact_page">
@@ -24,16 +26,16 @@
                 </div>
                 <div> <!--Aligned to right-->
                     <ul class = "navigation_elements">
-                        <li><input type="search" name="search" placeholder="Search..."></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="profile.html">Profile</a></li>                        
+                        <li class="nav_element"><input type="search" name="search" placeholder="Search..."></li>
+                        <li class="nav_element"><a href="settings.html">Settings</a></li>
+                        <li class="nav_element"><a href="profile.html">Profile</a></li>                        
                     </ul>
                 </div>
             </div>
         </nav>
         <main>
             <h1>Contact Us</h1>
-            <form>
+            <form id="contactForm">
                 <p>
                     <label for="first">First Name:</label>
                     <label for="last">Last Name:</label> <br>
@@ -68,10 +70,8 @@
                     <p>647-888-2267</p>
                 </div>
             </div>
-            <p>© 2025 Life and Leaf, All Rights Reserved.</p>
+            <p>Â© 2025 Life and Leaf, All Rights Reserved.</p>
             <a href = "#"> Privacy Policy </a> | <a href = "#"> Terms of Service </a> | <a href = "contact.html">Contact Us</a>
         </footer>
     </body>
-    
-    
 </html>
