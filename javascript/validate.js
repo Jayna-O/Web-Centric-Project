@@ -17,6 +17,7 @@ emailWidget.addEventListener("input", checkName);
 
 
 
+
 function checkName(){
     let firstName = firstWidget.value.trim();
     firstValid = firstName.length > 0; 
