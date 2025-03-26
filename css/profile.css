@@ -11,3 +11,36 @@ body {
 }
 
 /* Page  Header */
+h1 {
+    margin: 0;
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 3rem;
+}
+
+#achievements-section {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.achievements {
+    width: 30%;
+    background-color: #1F2421;
+    text-align: center;
+}
+
+#achievements-section h2 {
+    font-size: 3rem;
+    color: red;
+}
+
+#achievements-section div {
+    font-size:2rem;
+    color: white;
+}
