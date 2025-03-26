@@ -179,3 +179,43 @@ input[type="submit"] {
     color: white;
     font-size: 10px;
 }
+
+input:invalid {
+    border: red solid 2px;
+}
+
+.error.visible {
+    display: block;
+}
+
+
+.invalid {
+    border: 2px solid red;
+}
+
+.invalid:focus {
+    border-color: red; /* Keeps the red border when the user focuses on the input */
+    
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+}
+
+.error.hidden {
+    display: none; /* Hidden when no error */
+}
+
+.hidden {
+    display: none;
+}
+
+.form_control.success input {
+    border-color: green;
+}
+
+.form_control.error input {
+    border-color: red;
+}

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/css/nav.css">
         <link rel="stylesheet" href="/css/settings.css">
         <link rel="stylesheet" href="/css/footer.css">
+        <script src="/javascript/settings.js" defer></script>
     </head>
 
     <body id="setting">
@@ -49,31 +50,30 @@
             Account and Privacy Settings
         </h2>
 
-        <section id="intro">
-            <div class="background_image">
-                
-            </div>
-        </section>
-
-        <form>
-            <div>
+        <form id = "form">
+            <div id = "form_container">
                 <label for="username">Change Username:</label>
-                <input type="text" id="username" name="username" placeholder="Your username..." minlength="4" maxlength="8">
+                <input type="text" id="username" name="username" placeholder="Your username..." >
+                <span id="userError"></span>
 
                 <label for="pic">Change Profile Picture:</label>
                 <input type="file" id="pic" name="pic" accept="image/*">
 
                 <label for="email">Change Email:</label>
-                <input type="email" id="email" name="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+                <input type="email" id="email" name="email" placeholder="name@domain.com">
+                <span id="emailError"></span>
 
                 <label for="old_password">Old Password:</label>
-                <input type="password" id="old_password" name="old_password" placeholder="Old password..." minlength="4" maxlength="8">
+                <input type="password" id="old_password" name="old_password" placeholder="Old password...">
+                <span id="oldPassError"></span>
 
                 <label for="new_password">New Password:</label>
-                <input type="password" id="new_password" name="new_password" placeholder="New password..." minlength="8" maxlength="8">
+                <input type="password" id="new_password" name="new_password" placeholder="New password...">
+                <span id="newPassError"></span>
 
                 <label for="phone">Change Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" minlength="10" maxlength="10">
+                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" minlength="12">
+                <span id="phoneError"></span>
             </div>
             <input type="submit" id="save" name="save" value="Save Settings">
 
@@ -93,15 +93,14 @@
         <div class="allImages">
         <div class="side_image">
             <img src = "/assets/images/waterplant.png" alt="water_plant" width="200" height="300  ">
-            <p>Image of <cite>Green Plant</cite> from <cite>HowToDrawForKids</cite></p>
+            
         </div>
         <div class="pipe_image">
             <img src="/assets/images/pipe.png" alt="pipe" width="150" height="150">
-            <p>Image of <cite>Water Pipe</cite> from <cite>FlatIcon</cite></p>
+            
         </div>
         <div class="rain_drop">
             <img src="/assets/images/waterdrop.webp" alt="rain_drop" width="80" height="80">
-            <p>Image of <cite>Rain Drop</cite> from <cite>jhg</cite><p>
         </div>
         <div class="plant1">
             <img src="/assets/images/cuteplant.png" alt="plant1" width="450" height="450">
@@ -109,6 +108,9 @@
         <div class="plant2">
             <img src="/assets/images/tree2.webp" alt="plant2" width="400" height="300">
         </div>
+            <p>Image of <cite>Green Plant</cite> from <cite>HowToDrawForKids</cite></p>
+            <p>Image of <cite>Water Pipe</cite> from <cite>FlatIcon</cite> , Image of <cite>Cute Plant</cite> from <cite>pngtree</cite></p>
+            <p>Image of <cite>Rain Drop</cite> from <cite>vecteezy</cite>, , Image of <cite>Brown Pot Plant</cite> from <cite>pngtree</p>
         </div>
 
         <footer>
