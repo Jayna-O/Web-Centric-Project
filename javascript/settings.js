@@ -57,6 +57,7 @@ function checkValue(){
         newPassError.innerHTML = "Password is required";
         newPassValid = false;
     } else if (newPassVal.length !== 8) {
+
         newPassError.innerHTML = "Password must be 8 characters";
         newPassValid = false;
     } else {
@@ -78,28 +79,28 @@ function checkValue(){
     // Email validation
     if (emailVal === '') {
         emailError.innerHTML = "Email is required";
-        emailError = false;
+        emailValid = false;
     } else if (!emailPattern.test(emailVal)) {
         emailError.innerHTML = "Email is invalid";
-        emailError = false;
+        emailValid = false;
     } else {
-        emailError = true;
+        emailValid = true;
     }
 
     // Phone validation
     if (phoneVal === '') {
         phoneError.innerHTML = "Phone number is required";
-        phoneError = false;
+        phoneValid = false;
     } else if (!phone.checkValidity()) {
         phoneError.innerHTML = "Phone number is invalid";
-        phoneError = false;
+        phoneValid = false;
     } else {
-        phoneError = true;
+        phoneValid = true;
     }
 }
 
 function checkForm(event) {
-    if (!userValid || !oldPassValid || !emailValid || !newPassValid || !phoneValid) {
+    if (!userValid || !oldPassValid || !emailValid || !newPassValid) {
         event.preventDefault();
     }
 }
