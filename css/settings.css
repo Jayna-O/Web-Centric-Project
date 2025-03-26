@@ -11,17 +11,22 @@ body {
 }
 
 #about_page footer, #setting footer{
-    padding: 0.75rem;
     color: #49A078;
+    padding: 0.75rem;
     background-color:#1F2421;
     clear: both;
-    width: 98%;
     position: absolute;
-    bottom: -580px;
+    left: 0px;
+    bottom: -600px;
+    width: 100%;
 }
 
 #about_page h2, #setting h2 {
     font-size: 35px;
+}
+
+#setting h2 {
+    color: white;
 }
 
 #about_page p{
@@ -34,7 +39,8 @@ body {
     text-align: center;
     background-color: #1F2421;
     padding: 70px;
-    margin-top: 0px;
+    margin-top: 0px; 
+    bottom: -600px;
 }
 
 .content {
@@ -56,11 +62,12 @@ body {
 
 #setting input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
     border: 1px solid gray;
-    padding: 5px;
+    padding: 10px;
     font-style: italic;
     border-radius: 5px;
     font-size: 20px;
     margin-bottom: 15px;
+    width: 500px;
 }
 
 
@@ -68,32 +75,107 @@ body {
     padding: 10px;
     width: auto;
     border-radius: 8px;
-    margin-top: -17px;
-    background-color: white;
+    margin-top: -750px;
+    margin-left: 800px;
+    color: white;
+    position: absolute;
+    
 }
 
 #setting form {
     text-align: center;
-}
+    color: white;
+    margin-top: -600px;
+    background-size: cover;
+    position: relative;
+    background-color: rgb(34, 32, 32);
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 0px 50px 0px;
+    border-radius: 50px;
 
-#setting img {
-    width: 100%;
-    height: auto;
-    align-items: center;
 }
-
-#setting div{
-    padding: 10px;
-} 
 
 #setting label {
     font-size: 25px;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 100px;
+}
+
+#setting input {
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 100px;
 }
 
 #main_title {
     text-align: center;
 }
 
-#setting p {
-    margin-top: 0px;
+
+#setting{
+    background-color: rgb(22, 22, 22);
+}
+
+input[type="submit"] {
+    width: 250px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+#setting .side_image{
+    position: absolute; 
+    margin-top: -350px;
+    margin-left: 1200px;
+}
+
+#setting .pipe_image {
+    position: absolute; 
+    margin-top: -650px;
+    margin-left: 1270px;
+}
+
+#setting .rain_drop {
+    position: absolute; 
+    margin-top: -515px;
+    margin-left: 1258px;
+    animation-name: moveWaterPlant;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+
+}
+
+#setting .plant1 {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: -440px;
+}
+
+#setting .plant2 {
+    position: absolute;
+    margin-left: 980px;
+    margin-top: -300px;
+}
+
+@keyframes moveWaterPlant {
+    0% {
+        transfrom: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 130px);
+    }
+}
+
+.allImages p {
+    color: white;
+    font-size: 10px;
 }
