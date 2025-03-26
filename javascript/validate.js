@@ -17,6 +17,7 @@ emailWidget.addEventListener("input", checkName);
 
 
 
+
 function checkName(){
     let firstName = firstWidget.value.trim();
     firstValid = firstName.length > 0; 
@@ -46,6 +47,7 @@ function checkName(){
 }
 function checkForm(event) {
     if (!firstValid || !lastValid || !emailValid) {
+        window.alert("Fill in Missing Information")
         event.preventDefault();
     }
 }

@@ -3,12 +3,15 @@
     
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Profile</title>
 
         <link rel="stylesheet" href="/css/nav.css">
         <link rel="stylesheet" href="/css/profile.css">
         <link rel="stylesheet" href="/css/footer.css">
+
+        <script src="/javascript/achievements.js"></script>
     </head>
 
     <body id="profile_page">
@@ -34,26 +37,29 @@
                 </div>
             </div>
         </nav>
-
-        <h1>
-            <!--Name of the page-->
-            Your Profile
-        </h1>
+        <!--Name of the page-->
+        <h1>Your Profile</h1>
 
         <!--Different sections of the website-->
         <main>
-            <section>
-                <h2>Name: </h2>
-            </section>
-
-            <section>
-                <h2>Joined Date: XX/XX/XX</h2>
-            </section>
-
-            <section>
-                <h2>Streak: </h2>
-            </section>
+            <h2>Achievements</h2>
+            <div id="achievements-section">
+                <div class="achievements">
+                    <h2 id="green-machine">GREEN MACHINE</h2>
+                    <div>Gain 10 Eco Points</div>
+                </div>
+                <div class="achievements">
+                    <h2 id="resourceful">RESOURCEFUL</h2>
+                    <div>Gain 100 Eco Points</div>
+                </div>
+                <div class="achievements">
+                    <h2 id="sustainable">SUSTAINABLE</h2>
+                    <div>Gain 1000 Eco Points</div>
+                </div>
+            </div>
+            
         </main>
+
         <footer>
             <p>© 2025 Life and Leaf, All Rights Reserved.</p>
             <a href = "#"> Privacy Policy </a> | <a href = "#"> Terms of Service </a> | <a href = "contact.html">Contact Us</a>

@@ -10,24 +10,37 @@ body {
     overflow-x: hidden;
 }
 
-#profile_page section{
-    text-align: center;
+/* Page  Header */
+h1 {
+    margin: 0;
 }
-#profile_page h1{
-    font-size: 100px;
-    color: white;
+
+h2 {
+
     text-align: center;
+    font-size: 3rem;
+}
+
+#achievements-section {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.achievements {
+    width: 30%;
     background-color: #1F2421;
-    padding: 70px;
-    margin-top: 0px;    
+    text-align: center;
 }
-#profile_page footer{
-    color: #49A078;
-    padding: 0.75rem;
-    background-color:#1F2421;
-    clear: both;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+
+#achievements-section h2 {
+    font-size: 3rem;
+    color: red;
+}
+
+#achievements-section div {
+    font-size:2rem;
+    color: white;
 }

@@ -4,53 +4,79 @@
     <head>
         <title>Progress</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/css/nav.css">
         <link rel="stylesheet" href="/css/progress.css">
         <link rel="stylesheet" href="/css/footer.css">
+
+        <script src="/javascript/ecoTracker.js" async></script>
     </head>
 
-    <body>
-         <!--Navigation bar-->
-         <nav class="navigation_bar"> <!--Navigation bar-->
-            <div class = "navigation_dividers">
-                <div> <!--Aligned to the left-->
-                    <ul class="navigation_elements">
-                        <li class="nav_element"><a href="index.html">Life and Leaf</a></li>
-                        <li class="nav_element"><a href="index.html">Home</a></li>
-                        <li class="nav_element"><a href="progress.html">Progress</a></li>
-                        <li class="nav_element"><a href="about.html">About</a></li>
-                        <li class="nav_element"><a href="contact.html">Contacts</a></li>
-                        <li class="nav_element"><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div> <!--Aligned to right-->
-                    <ul class = "navigation_elements">
-                        <li><input type="search" name="search" placeholder="Search..."></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="profile.html">Profile</a></li>                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <body id="profile_page">
+        <!--Navigation bar-->
+        <nav class="navigation_bar"> <!--Navigation bar-->
+           <div class = "navigation_dividers">
+               <div> <!--Aligned to the left-->
+                   <ul class="navigation_elements">
+                       <li class="nav_element"><a href="index.html">Life and Leaf</a></li>
+                       <li class="nav_element"><a href="index.html">Home</a></li>
+                       <li class="nav_element"><a href="progress.html">Progress</a></li>
+                       <li class="nav_element"><a href="about.html">About</a></li>
+                       <li class="nav_element"><a href="contact.html">Contacts</a></li>
+                       <li class="nav_element"><a href="gallery.html">Gallery</a></li>
+                   </ul>
+               </div>
+               <div> <!--Aligned to right-->
+                   <ul class = "navigation_elements">
+                       <li><input type="search" name="search" placeholder="Search..."></li>
+                       <li><a href="settings.html">Settings</a></li>
+                       <li><a href="profile.html">Profile</a></li>                        
+                   </ul>
+               </div>
+           </div>
+       </nav>
+       <!--Name of the page-->
+       <h1>Progress</h1>
 
-        <h1 class="title">
-            <!--Name of the page-->
-            Your Progress
-        </h1>
-
-        <!--Different sections of the website-->
-        <section>
-            <h2>Progress Of The Day</h2>
-        </section>
-
-        <section>
-            <h2>Yearly Progress</h2>
-        </section>
-
-        <section>
-            <h2>Progress Chart</h2>
-        </section>
+       <!--Different sections of the website-->
+       <main >
+           <div id="main-container">
+               <div id="tracker-container">
+                   <h2 id="eco-points">ECO POINTS</h2>
+                   <div id="tracker">
+                       <div id="circle"> 
+                           <div id="circle-number">
+                               0
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div id="container-3">
+                   <div id="recent-actions">
+                       <h2>LOG</h2>
+                       <div id="log-container">
+                            <div id="logger">
+                                <div id="main-logger">
+                                    <h3>LOG PROGRESS</h3>
+                                    <input id="action-input" type="text" autocomplete="off" placeholder="What did you do?">
+                                    <button id="log-action" onclick="saveLog()">
+                                        LOG
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="log">
+                                <h3>RECENT LOGS: </h3>
+                                <ul id="log-list">
+                                    
+                                </ul>
+                            </div>
+                       </div>
+                       
+                   </div>
+               </div>
+           </div>
+       </main>
     </body>
 
 </html>

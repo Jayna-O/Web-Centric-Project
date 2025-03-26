@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/footer.css">
     </head>
     
-    <body>
+    <body id="gallery">
         <nav class="navigation_bar"> <!--Navigation bar-->
             <div class = "navigation_dividers">
                 <div> <!--Aligned to the left-->
@@ -46,11 +46,13 @@
                 <p>Image of <cite>nature photo</cite> from <cite>istockphoto</cite>, Image of <cite>planting</cite> from <cite>Wonderlab</cite>, Image of <cite>volunteers</cite> from <cite>LinkedIn</cite></p>
                 <div>
                     <label for="image">Add Image:</label>
+                </div>
+                <div>
                     <input type="file" id="image" name="image" accept="image/*">     
                 </div>
                 
                 <div>
-                    <input type="submit">  
+                    <input type="submit" id="addImg"value="Submit Image">  
                 </div>
             </form>
         </main>
